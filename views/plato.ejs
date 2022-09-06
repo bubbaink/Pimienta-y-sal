@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pimienta & sal</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <nav class="ps-top">
+      <div class="ps-bar ps-white ps-padding ps-card ps-nav">
+        <a href="/" class="ps-bar-item ps-button">Pimienta & Sal</a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="ps-right ps-hide-small">
+          <a href="#about" class="ps-bar-item ps-button">About</a>
+          <a href="/detalle" class="ps-bar-item ps-button">Menu</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page content -->
+    <div class="ps-content">
+        <!-- main -->
+        
+            <h4><%= food.name %> </h4>
+            <p class="ps-text-grey">
+              <%= food.description %>  U$S <%=food.price %> 
+            </p>
+            <img src="/images/<%=food.img %> " alt="">
+            <br />   
+        
+        <!-- Footer -->
+      <footer class="ps-center ps-light-grey ps-padding-32">
+        <p>Powered by Pimienta & Sal</p>
+      </footer>
+    </div>
+  </body>
+</html>
